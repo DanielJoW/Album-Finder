@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Big Album Finder</title>
+  <!--<link href="style.css" type="text/css" rel="stylesheet">-->
+  <script src="scripts.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id=searcharea>
+  <h1>The Big Album Finder</h1>
+  <form>
+    Search for an album...<br>
+    <input type="text" name="albumSearch" id="albumSearch">
+    <input type="button" name="searchSubmit" id = "searchSubmit" value="Search!" onclick="search()">
+  </form>
+</div>
+<div id="resultarea">
+  <h2 id="albumTitle"></h2>
+  <div id="albumArt">
+  </div>
+  <h4 id="artistName"></h4>
+  <p id="releaseDate"></p>
+</div>
+</body>
+</html>
