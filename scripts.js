@@ -78,6 +78,11 @@ var albumCatalogue = [
     title : "Lover",
     artist : "Taylor Swift",
     release : "2019"
+  },
+  {
+    title : "Outbreak",
+    artist : "The Headache Pandemic",
+    release : "2010"
   }
 ]
 
@@ -101,3 +106,13 @@ function search(){
       document.getElementById("albumArt").innerHTML="<img src=woops.png width=250px height=160px>";
   }
 }
+
+/* Hoping to add:
+
+1) Hit enter to search.
+2) CSS styling.
+3) "Add an album" function.
+4) Make actual API calls to an album database.
+5) Pull 5 random albums you can view on the homepage.
+
+*/
