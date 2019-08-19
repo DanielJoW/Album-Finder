@@ -86,14 +86,20 @@ var albumCatalogue = [
   }
 ]
 
+function enterSearch(){
+  if (event.keyCode === 13) {
+    document.getElementById("searchSubmit").click();
+  }
+};
+
 function search(){
   var searchTitle = document.getElementById("albumSearch").value;
   var found = false;
   for(var i = 0; i < albumCatalogue.length; i++){
     if(albumCatalogue[i].title === searchTitle){
       document.getElementById("albumTitle").innerHTML=albumCatalogue[i].title;
-      document.getElementById("artistName").innerHTML=albumCatalogue[i].artist;
-      document.getElementById("releaseDate").innerHTML=albumCatalogue[i].release;
+      document.getElementById("artistName").innerHTML="By " +albumCatalogue[i].artist;
+      document.getElementById("releaseDate").innerHTML="Released in " + albumCatalogue[i].release;
       document.getElementById("albumArt").innerHTML="<img src=artwork/" + i +".jpg width=300px height=300px>";
       found = true;
       break;

@@ -2,25 +2,27 @@
 <html>
 <head>
   <title>The Big Album Finder</title>
-  <!--<link href="style.css" type="text/css" rel="stylesheet">-->
+  <link href="style.css" type="text/css" rel="stylesheet">
   <script src="scripts.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.png" type="image/png" />
 </head>
-<body>
-<div id=searcharea>
-  <h1>The Big Album Finder</h1>
-  <form>
-    Search for an album...<br>
-    <input type="text" name="albumSearch" id="albumSearch">
-    <input type="button" name="searchSubmit" id = "searchSubmit" value="Search!" onclick="search()">
-  </form>
+<body onkeyup="enterSearch()">
+<h1>THE BIG ALBUM FINDER</h1>
+<div id="container">
+<div id="searcharea">
+  <div id="searchbars">
+    <input type="text" name="albumSearch" id="albumSearch" placeholder="Album title...">
+    <input type="button" name="searchSubmit" id = "searchSubmit" value="Search" onclick="search()">
+  </div>
 </div>
 <div id="resultarea">
   <h2 id="albumTitle"></h2>
+  <h4 id="artistName"></h4>
   <div id="albumArt">
   </div>
-  <h4 id="artistName"></h4>
   <p id="releaseDate"></p>
+</div>
 </div>
 </body>
 </html>
