@@ -113,12 +113,17 @@ function search(){
   }
 }
 
+function randomAlbum(){
+  var r = Math.floor(Math.random() * Math.floor(16));
+  document.getElementById("albumTitle").innerHTML=albumCatalogue[r].title;
+  document.getElementById("artistName").innerHTML="By " +albumCatalogue[r].artist;
+  document.getElementById("releaseDate").innerHTML="Released in " + albumCatalogue[r].release;
+  document.getElementById("albumArt").innerHTML="<img src=artwork/" + r +".jpg width=300px height=300px>";
+}
+
 /* Hoping to add:
 
-1) Hit enter to search.
-2) CSS styling.
-3) "Add an album" function.
-4) Make actual API calls to an album database.
-5) Pull 5 random albums you can view on the homepage.
+1) "Add an album" function.
+2) Make actual API calls to an album database.
 
 */
