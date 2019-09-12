@@ -114,7 +114,7 @@ function search(){
 }
 
 function randomAlbum(){
-  var r = Math.floor(Math.random() * Math.floor(16));
+  var r = Math.floor(Math.random() * Math.floor(albumCatalogue.length));
   document.getElementById("albumTitle").innerHTML=albumCatalogue[r].title;
   document.getElementById("artistName").innerHTML="By " +albumCatalogue[r].artist;
   document.getElementById("releaseDate").innerHTML="Released in " + albumCatalogue[r].release;
